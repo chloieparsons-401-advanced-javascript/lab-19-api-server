@@ -10,12 +10,19 @@ Lab 19: API Server
 
 ## Modules
 * ```server.js``` 
-    - A message queue server that has a queue called 'file' that monitors save and error events and a queue called 'database' that monitors CRUD+E (create, read, update, delete, error) events.
+    - Imports Queue client library and publishes events on all CRUD+E (create, read, update, delete, error) events.
+
+* ```index.js``` 
+    - Connects MongoDB to server and starts up server.
 
 ## Running the app
 * ```npm i``` (to install dependencies)
 
 * ```npm run start``` (fires up node server.js)
+
+* Environment Variables
+   - PORT
+   - MONGODB
 
 ## Tests
 * ```npm run test```
